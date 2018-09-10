@@ -1,0 +1,20 @@
+[30-Nov-2017 15:43:04 Asia/Kolkata] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; ctools_context has a deprecated constructor in /home/karthik1989/public_html/circuit/sites/all/modules/ctools/includes/context.inc on line 30
+[30-Nov-2017 15:43:04 Asia/Kolkata] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; ctools_context_required has a deprecated constructor in /home/karthik1989/public_html/circuit/sites/all/modules/ctools/includes/context.inc on line 93
+[30-Nov-2017 15:43:04 Asia/Kolkata] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; ctools_context_optional has a deprecated constructor in /home/karthik1989/public_html/circuit/sites/all/modules/ctools/includes/context.inc on line 200
+[30-Nov-2017 15:43:04 Asia/Kolkata] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; views_many_to_one_helper has a deprecated constructor in /home/karthik1989/public_html/circuit/sites/all/modules/views/includes/handlers.inc on line 753
+[30-Nov-2017 15:43:04 Asia/Kolkata] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; ctools_context has a deprecated constructor in /home/karthik1989/public_html/circuit/sites/all/modules/ctools/includes/context.inc on line 30
+[30-Nov-2017 15:43:04 Asia/Kolkata] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; ctools_context_required has a deprecated constructor in /home/karthik1989/public_html/circuit/sites/all/modules/ctools/includes/context.inc on line 93
+[30-Nov-2017 15:43:04 Asia/Kolkata] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; ctools_context_optional has a deprecated constructor in /home/karthik1989/public_html/circuit/sites/all/modules/ctools/includes/context.inc on line 200
+[30-Nov-2017 15:43:04 Asia/Kolkata] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; views_many_to_one_helper has a deprecated constructor in /home/karthik1989/public_html/circuit/sites/all/modules/views/includes/handlers.inc on line 753
+[30-Nov-2017 15:43:04 Asia/Kolkata] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; views_display has a deprecated constructor in /home/karthik1989/public_html/circuit/sites/all/modules/views/includes/view.inc on line 2545
+[10-Sep-2018 01:29:17 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/karthik1989/public_html/circuit/includes/database/database.inc:2227
+Stack trace:
+#0 /home/karthik1989/public_html/circuit/includes/database/database.inc(2227): PDOStatement->execute(Array)
+#1 /home/karthik1989/public_html/circuit/includes/database/database.inc(697): DatabaseStatementBase->execute(Array, Array)
+#2 /home/karthik1989/public_html/circuit/includes/database/database.inc(2406): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/karthik1989/public_html/circuit/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/karthik1989/public_html/circuit/includes/lock.inc(146): lock_may_be_available('schema:runtime:...')
+#5 /home/karthik1989/public_html/circuit/includes/bootstrap.inc(438): lock_acquire('schema:runtime:...')
+#6 /home/karthik1989/public_html/circuit/includes/bootstrap.inc(460): DrupalCacheArray->set(Array)
+#7 [internal function]: DrupalCacheArray->__destruct()
+#8 { in /home/karthik1989/public_html/circuit/includes/database/database.inc on line 2227
